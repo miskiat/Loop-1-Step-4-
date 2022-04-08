@@ -1,0 +1,211 @@
+*,
+*: before,
+*: after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background: linear-gradient(140deg, #cedce8, #437ead);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chat-widget {
+  background-color: white;
+  width: 25rem;
+}
+.chat-widget header {
+  background-color: #6996d8;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  text-transform: uppercase;
+  padding: 20px;
+  position: relative;
+}
+.chat-widget header:before {
+  position: absolute;
+  content: "";
+  height: 5px;
+  width: 5px;
+  background-color: white;
+}
+.chat-widget header span {
+  padding-left: 15px;
+}
+.duration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2px;
+  margin-top: 20px;
+  margin-left: 2%;
+  margin-right: 2%;
+  text-transform: uppercase;
+  background-color: darkslategray;
+}
+.duration span {
+  background-color: white;
+  padding: 0 0.5%;
+}
+.other-chat span {
+  font-size: 10px;
+  margin-right: 5rem;
+  padding-bottom: 5rem;
+
+
+}
+.other-chat p {
+  background-color: dodgerblue;
+  height: 4rem;
+  width: 15rem;
+  margin-left: 2rem;
+  border-radius: 0.5rem;
+  border-top-left-radius: 0rem;
+  position: relative;
+  margin-top: 2rem;
+  /* object-fit: contain; */
+}
+.other-chats span{
+  font-size: 10px;
+  /* margin-top: 5rem; */
+  /* margin-left: 10rem; */
+  margin-bottom: 10px;
+  /* display: flexbox; */
+  /* justify-content: center; */
+}
+.other-chats p{
+  /* object-fit: cover; */
+  background-color: dodgerblue;
+  height: 2rem;
+  width: 8rem;
+  margin-left: 2rem;
+  border-radius: 0.5rem;
+  border-top-left-radius: 0rem;
+  /* position: relative; */
+  /* margin-top: 2rem; */
+
+
+}
+.other-chats p:before{
+  position: relative;
+  content: "";
+  top: 0rem;
+  left: 0rem;
+  border-right: 1rem solid dodgerblue;
+  border-bottom: 1rem solid transparent;
+  border-top: 0rem solid dodgerblue;
+  border-left: 1rem solid transparent;
+}
+.other-chat p:before {
+  position: absolute;
+  content: "";
+  top: 0rem;
+  left: -2rem;
+  border-right: 1rem solid dodgerblue;
+  border-bottom: 1rem solid transparent;
+  border-top: 0rem solid dodgerblue;
+  border-left: 1rem solid transparent;
+}
+
+.my-chat span {
+  font-size: 15px;
+  padding-left: 1rem;
+  /* align-items: flex-end; */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 1rem;
+  /* justify-content: flex-end; */
+}
+
+.my-chat {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* align-items: flex-end; */
+  background-color: #f1eff1;
+  height: 4rem;
+  width: 15rem;
+  /* border: 1px solid black; */
+  margin-top: 1rem;
+  /* margin-right: 2rem;   */
+  border-radius: 0.5rem;
+  border-top-right-radius: 0rem;
+}
+.my-chat:after {
+  position: relative;
+  content: "";
+  bottom: 3rem;
+  right: -0.5rem;
+  border-top: 1rem solid #f1eff1;
+  border-right: 0.5rem solid transparent;
+  border-bottom: 0rem solid #f1eff1;
+  border-left: 0rem solid transparent;
+  border-top-left-radius: 0rem;
+}
+.last-chat{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: pink;
+  height: 3rem;
+  width: 15rem;
+  margin-top: 1rem; 
+ margin-right: 2rem;
+  border-radius: 0.5rem;
+  border-top-left-radius: 0rem;
+}
+form{
+  display:flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: white;
+  margin-top: 10%;
+  margin-left: 1rem;
+  border:none;
+  /* height:4rem; */
+
+}
+form input{
+  /* flex-grow: 5px; */
+  
+}
+form button{
+  /* display: flex; */
+  /* justify-content: end; */
+  /* align-items: flex-end; */
+  /* margin-left: 20rem; */
+  color:royalblue;
+  font-weight: 700;
+  /* border:none; */
+  background-color: none;
+  /* height: 2rem; */
+  }
+
+
+ 
+/* .chat p {
+  max-width: 75%;
+  width: fit-content;
+  background: aqua;
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  padding: 0.5rem;
+  margin: 0;
+  margin-left: 0.5rem;
+  position: relative;
+} */ */
